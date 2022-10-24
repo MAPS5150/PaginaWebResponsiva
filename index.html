@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <span id="hola">¡Hola amig@s!
-    Bienvenid@s a nuestra pagina Web</span>
-
-    <!--MENU-->
+    <em id="hola">¡Hola amig@s!
+    Bienvenid@s a nuestra pagina Web</em>
+        <!--Contenedor principal del codigo-->
     <div class="main-container"> 
+        <!--MENU-->
         <div class="menu">
             <div class="menu-left">
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Trabajo</a></li>
+                    <li><a href="#trabajo">Trabajo</a></li>
                 </ul>
             </div>
             <div class="logo">
@@ -27,8 +27,8 @@
             </div>
             <div class ="menu-right">
                 <ul>
-                    <li><a href="#">Informacion</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#informacion">Informacion</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -49,9 +49,9 @@ style=" fill:#FFFFFF;"><rect width="36" height="6" x="6" y="21" fill="#3dd9eb"><
                 <div id="menu-mobile-items" class="menu-mobile-closed">
                     <ul>
                         <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Trabajo</a></li>
-                        <li><a href="#">Informacion</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#trabajo">Trabajo</a></li>
+                        <li><a href="#informacion">Informacion</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,7 +59,7 @@ style=" fill:#FFFFFF;"><rect width="36" height="6" x="6" y="21" fill="#3dd9eb"><
         <!--VIDEO Principal-->
         <section class="main-video">
             <div class="video">
-                <video src="runningplaya.mp4" width="100%" autoplay loop></video>
+                <video src="gymcuerda.mp4" width="100%" autoplay loop></video>
             </div>
         </section>
         <!--Introduccion-->
@@ -77,7 +77,7 @@ style=" fill:#FFFFFF;"><rect width="36" height="6" x="6" y="21" fill="#3dd9eb"><
             </p>
         </section>
         <!--Trabajo-->
-        <section>
+        <section id="trabajo">
             <h2>Trabajo</h2>
             <div class="grid work">
                 <a href="#" class="item" data-id="0">
@@ -138,7 +138,7 @@ style=" fill:#FFFFFF;"><rect width="36" height="6" x="6" y="21" fill="#3dd9eb"><
                 </a>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="informacion">
             <h2>Desarrolla tus Habilidades Deportivas</h2>
             <p><b>Potencializa tu vida</b></p>
             <ul>
@@ -176,7 +176,7 @@ style=" fill:#FFFFFF;"><rect width="36" height="6" x="6" y="21" fill="#3dd9eb"><
             </div>
         </section>
         <!--Contacto-->
-        <section class="contact">
+        <section class="contact" id="contacto">
             <div class="contact-container">
                 <h2>Contactanos</h2>
                 <div class="columns">
@@ -221,12 +221,12 @@ style=" fill:#000000;"><path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.
             <div></div>
             <div class="nav-buttons">
                 <a href="#" id="prev-button">
-                    <span class="material-icons md-60">
+                    <span class="material-icons md-48">
                         arrow_back_ios
                     </span>
                 </a>
                 <a href="#" id="next-button">
-                    <span class="material-icons md-60">
+                    <span class="material-icons md-48">
                         arrow_forward_ios
                     </span>
                 </a>
@@ -305,15 +305,28 @@ style=" fill:#000000;"><path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.
             </div>
             <div class="item item-hide">
                 <div class="main-image">
-                    <img src="api2.png" width="70%" alt="">
+                    <img src="api2.png" width="10%" alt="">
                 </div>
                 <div class="title">
                     <h2>API'S CARDS</h2>
                 </div>
                 <div class="description">
                     <!--************API instruction*************-->
-                    <div id="app"></div>
-                    <script src="main.js" type="module"></script>
+                    <div id="appi">
+                        <table>
+                            <thead>
+                                <tr align="center">  <!--encabezados de la API-->
+                                    <th>id</th>
+                                    <th>email</th>
+                                    <th>first_name</th>
+                                    <th>last_name</th>
+                                    <th>avatar</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody_Users"></tbody>
+                        </table>
+                    </div>
+                    <script src="main.js"></script>
                 </div>
             </div>
             <div class="item item-hide">
@@ -338,7 +351,7 @@ style=" fill:#000000;"><path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.
     </div>
     <!--Animacion de la Pantalla-->
     <div id="screen"></div>
-
+    <!--Vinculamos el javascript con nuestro html-->
     <script src="main.js"></script>
 </body>
 

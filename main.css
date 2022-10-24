@@ -1,7 +1,7 @@
 :root {
-    --background-color: gray;
-    --primary-color: white;
-    --hightlight-color: yellow;
+    --background-color: #FFF8EB; 
+    --primary-color: #4E6659;
+    --hightlight-color: #31DB92;
 }
 
 * {
@@ -21,8 +21,12 @@ body {
 }
 
 #hola {
-    color:chartreuse;
+    color: #072F67;
     position: relative;
+    text-align: center;
+    border: #FFFF00 2px solid;
+    width: 250px;
+    height: 100px;
 }
 
 ::selection {
@@ -209,9 +213,9 @@ h3 {
 .grid .item:hover img {
     transform: skewY(10deg) scale(1.4,1.4);
 }
-
+/* modificamos el fading del area de trabajo */
 .grid .item .bg-hover {
-    background-color: indigo;
+    background-color: #27BBE0;
     width: 100%;
     height: 150%;
     display: grid;
@@ -228,7 +232,7 @@ h3 {
 
 .grid .item:hover .bg-hover {
     overflow: hidden;
-    opacity: 0.75;
+    opacity: 0.95;
 }
 
 .grid .item:hover .bg-hover .info {
@@ -242,7 +246,9 @@ h3 {
 }
 
 .grid .item .bg-hover .customer {
-    color: crimson;
+    color: #FDE005;
+    font-weight: bold;
+    font-style: oblique;
 }
 
 .about {
@@ -259,9 +265,10 @@ h3 {
 }
 
 .contact {
-    background-color: coral;
-    padding-top: 150px;
-    color: azure;
+    background-color: #CBD4B0;
+    padding-bottom: 100px;
+    text-align:justify;
+    color: #4B5295;
     transform: skewY(-10deg);
 }
 
@@ -272,7 +279,7 @@ h3 {
 }
 
 .contact .contact-container h3 {
-    color:indianred
+    color: #B03060;
 }
 
 .contact .contact-container .social {
@@ -300,18 +307,18 @@ footer {
     height: 450px;
     margin-top: -170px;
 }
-
+/* Pantalla de cambio de secciones del menu */
 #screen {
-    background-color: var(--hightlight-color);
+    background-color: #267683;
     position: fixed;
     z-index: 100;
-    top: -1000px;
+    top: -800px;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     transform: skewY(-10deg);
     transition: all 0.45s;
-    animation-timing-function: linear;
+    animation-timing-function: lineal;
     animation-duration: 2s;
 }
 
